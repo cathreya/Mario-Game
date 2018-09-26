@@ -2,17 +2,7 @@
 
 ## Introduction
 
-An infinite scrolling Mario-like platformer game written in Python. 
-
-## OO Structure
-
-- **Inheritance**: A generic `SceneObject` class from which various Blocks, Enemy and Player classes are derived.
-
-- **Encapsulation**: All attributes and methods of an object are bundled into a single unit. The `Scene` class contains all the essential functionalities to run the game.
-
-- **Polymorphism**: Overloads the `__str__()` to make printing easier. Certain methods and attributes are overriden in child classes.
-
-- **Abstraction**: Implementation details are hidden from the user. Users can construct and modify the game using the scene and player methods.
+An infinite scrolling Mario-like platformer game written from scratch in Python. 
 
 ## Controls
 
@@ -55,32 +45,3 @@ An infinite scrolling Mario-like platformer game written in Python.
 	- `pip3 install -r requirements.txt`
 - Run the program using
 	- `python3 main.py`
-
-
-## File Structure
-
-```
-├── assets.py
-├── Blocks.py
-├── __init__.py
-├── main.py
-├── Media
-│   ├── 01-main-theme-overworld.mp3
-│   ├── 01-main-theme-overworld.wav
-│   ├── smb_breakblock.wav
-│   ├── smb_bump.wav
-│   ├── smb_coin.wav
-│   ├── smb_gameover.wav
-│   ├── smb_jump-small.wav
-│   ├── smb_jump-super.wav
-│   ├── smb_mariodie.wav
-│   ├── smb_stage_clear.wav
-│   └── smb_stomp.wav
-├── People.py
-├── README.md
-├── requirements.txt
-├── SceneObject.py
-├── Scene.py
-├── Score.py
-└── Sound.py
-```
